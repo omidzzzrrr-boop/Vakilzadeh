@@ -3,65 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کارت ویزیت دیجیتال ساعت وکیل‌زاده</title>
+    <title>ساعت وکیل‌زاده</title>
     <style>
         body {
             background-color: #000;
             color: #d4af37;
-            font-family: Tahoma, sans-serif;
+            font-family: Tahoma, Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            min-height: 100vh;
+            padding: 20px;
             margin: 0;
-            padding: 10px;
         }
-        .card {
-            border: 2px solid #d4af37;
-            padding: 30px;
-            text-align: right; /* متن‌ها از راست شروع شوند */
+        .btn {
+            display: block;
             width: 90%;
             max-width: 400px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
         }
-        .logo-container { text-align: center; }
-        img { width: 150px; margin-bottom: 20px; }
-        h1 { text-align: center; font-size: 24px; margin-bottom: 10px; }
-        .info { text-align: center; margin: 15px 0; font-size: 14px; }
-        
-        a { 
-            color: #fff; 
-            text-decoration: none; 
-            display: block; 
-            margin: 12px 0; 
-            border: 1px solid #d4af37; 
-            padding: 12px; 
-            border-radius: 8px; 
-            transition: 0.3s; 
-            text-align: right; /* اعداد سمت راست قرار می‌گیرند */
+        .btn:hover {
+            background-color: #d4af37;
+            color: #000;
         }
-        a:hover { background: #d4af37; color: #000; }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="logo-container">
-        <img src="logo.png" alt="ساعت وکیل‌زاده">
-        <h1>ساعت وکیل‌زاده</h1>
-    </div>
-    <div class="info">مشهد، بلوار مصلی، مصلی ۷/۱، مجتمع تجاری یاقوت، طبقه همکف، پلاک ۳۶</div>
-
-    <a href="data:text/vcard;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTYWF0IFZha2lsemFkZWgNClRFTDtUWVBFPUNFTEx:+989358530032%0D%0AEND:VCARD" download="Saat_Vakilzadeh.vcf">۱. ذخیره در مخاطبین</a>
+    <a href="data:text/vcard;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTYWF0IFZha2lsemFkZWgNClRFTDtUWVBFPUNFTEx:+989358530032%0D%0AEND:VCARD" class="btn">ذخیره در مخاطبین 💾</a>
     
-    <a href="tel:09358530032">۲. تماس تلفنی</a>
-    <a href="https://www.instagram.com/vakilzadeh.watch">۳. اینستاگرام</a>
-    <a href="https://t.me/Saatvakilzadeh">۴. تلگرام</a>
-    <a href="https://t.me/Watchsefaresh">۵. ادمین تلگرام</a>
-    <a href="https://rubika.ir/joinc/ECIJGBEC0NVPPNVVOQABSAYEXCTQPCLZ">۶. روبیکا</a>
-    <a href="https://nshn.ir/83_b1xu2VJd9Ms">۷. لوکیشن (نشان)</a>
-</div>
+    <a href="tel:09358530032" class="btn">تماس با ما 📞</a>
+    
+    <a href="https://nshn.ir/83_b1xu2VJd9Ms" class="btn">مسیریابی 📍</a>
+    
+    <a href="https://www.instagram.com/vakilzadeh.watch" class="btn">اینستاگرام 📸</a>
+    
+    <a href="https://t.me/Saatvakilzadeh" class="btn">تلگرام ✈️</a>
+    
+    <a href="https://t.me/Watchsefaresh" class="btn">ادمین تلگرام 👨‍💻</a>
+    
+    <a href="https://rubika.ir/joinc/ECIJGBEC0NVPPNVVOQABSAYEXCTQPCLZ" class="btn">روبیکا 💬</a>
 
 </body>
 </html>
