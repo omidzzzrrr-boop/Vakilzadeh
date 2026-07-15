@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ساعت وکیل‌زاده</title>
     <style>
         body {
@@ -12,32 +12,32 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            justify-content: center;
+            min-height: 100vh;
             margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
         }
-        .logo { width: 180px; margin-bottom: 20px; }
+        .logo { width: 120px; margin-bottom: 10px; }
         .btn {
             display: block;
             width: 90%;
-            max-width: 400px;
-            padding: 18px;
-            margin: 8px 0;
+            max-width: 350px;
+            padding: 12px;
+            margin: 6px 0;
             text-align: center;
-            border: 2px solid #d4af37;
-            border-radius: 12px;
+            border: 1px solid #d4af37;
+            border-radius: 8px;
             color: #d4af37;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: bold;
-            transition: 0.3s;
         }
-        .btn:hover { background-color: #d4af37; color: #000; }
         .address { 
-            margin-top: 25px; 
+            margin-top: 15px; 
             text-align: center; 
-            font-size: 14px; 
-            line-height: 1.8; 
-            max-width: 400px; 
+            font-size: 12px; 
+            max-width: 350px; 
             color: #aaa;
         }
     </style>
@@ -46,23 +46,30 @@
 
     <img src="logo.png" alt="لوگو" class="logo">
 
-    <a href="data:text/vcard;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpGTjpTYWF0IFZha2lsemFkZWgNClRFTDtUWVBFPUNFTEx:+989358530032%0D%0AEND:VCARD" class="btn">ذخیره در مخاطبین 💾</a>
+    <!-- راهکار جدید برای ذخیره مخاطب -->
+    <a href="tel:+989358530032" class="btn" onclick="saveContact()">ذخیره در مخاطبین 💾</a>
     
     <a href="tel:09358530032" class="btn">تماس با ما 📞</a>
-    
     <a href="https://nshn.ir/83_b1xu2VJd9Ms" class="btn">مسیریابی 📍</a>
-    
     <a href="https://www.instagram.com/vakilzadeh.watch" class="btn">اینستاگرام 📸</a>
-    
     <a href="https://t.me/Saatvakilzadeh" class="btn">تلگرام ✈️</a>
-    
     <a href="https://t.me/Watchsefaresh" class="btn">ادمین تلگرام 👨‍💻</a>
-    
     <a href="https://rubika.ir/joinc/ECIJGBEC0NVPPNVVOQABSAYEXCTQPCLZ" class="btn">روبیکا 💬</a>
 
     <div class="address">
         مشهد، بلوار مصلی، مصلی ۷/۱، مجتمع تجاری یاقوت، طبقه همکف، پلاک ۳۶
     </div>
 
+    <script>
+        function saveContact() {
+            const vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:ساعت وکیل زاده\nTEL;TYPE=CELL:+989358530032\nEND:VCARD";
+            const blob = new Blob([vcard], { type: "text/vcard" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = "Saat_Vakilzadeh.vcf";
+            link.click();
+        }
+    </script>
 </body>
 </html>
