@@ -15,16 +15,17 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 10px;
+            padding: 5px;
             box-sizing: border-box;
         }
-        .logo { width: 120px; margin-bottom: 10px; }
+        /* لوگو با اندازه بزرگتر */
+        .logo { width: 160px; margin-bottom: 10px; }
         .btn {
             display: block;
             width: 90%;
             max-width: 350px;
-            padding: 12px;
-            margin: 6px 0;
+            padding: 10px;
+            margin: 5px 0;
             text-align: center;
             border: 1px solid #d4af37;
             border-radius: 8px;
@@ -34,7 +35,7 @@
             font-weight: bold;
         }
         .address { 
-            margin-top: 15px; 
+            margin-top: 10px; 
             text-align: center; 
             font-size: 12px; 
             max-width: 350px; 
@@ -46,8 +47,7 @@
 
     <img src="logo.png" alt="لوگو" class="logo">
 
-    <!-- راهکار جدید برای ذخیره مخاطب -->
-    <a href="tel:+989358530032" class="btn" onclick="saveContact()">ذخیره در مخاطبین 💾</a>
+    <a href="#" class="btn" onclick="saveContact(); return false;">ذخیره در مخاطبین 💾</a>
     
     <a href="tel:09358530032" class="btn">تماس با ما 📞</a>
     <a href="https://nshn.ir/83_b1xu2VJd9Ms" class="btn">مسیریابی 📍</a>
